@@ -2,8 +2,8 @@
   require 'vendor/autoload.php';
   
   $client = new MongoDB\Client("mongodb://localhost:27017");
-  $db = $client->test;
+  $db = $client->roldan_crud2;
   $collection = $db->users;
   
-  $collection->insertOne(['name' => 'Carlos', 'age' => 34]);
+  $collection->insertOne(['nombre' => 'Backend']);
   echo "Usuario insertado correctamente";
